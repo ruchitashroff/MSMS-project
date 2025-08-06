@@ -107,7 +107,7 @@ def front_desk_lookup(term):
     find_students(term)
     find_teachers(term)
     
-    # --- Main Application ---
+# --- Main Application ---
     def main():
         """Runs the main interactive menu for the receptionist."""
         # Pre-populate some data for easy testing
