@@ -113,6 +113,18 @@ def main():
         # Pre-populate some data for easy testing
         add_teacher("Dr. Keys", "Piano")
         add_teacher("Ms. Fret", "Guitar")
+        add_teacher("Mr. Strum", "Bass")
+        add_teacher("Ms. Bow", "Violin")
+        add_teacher("Dr. Reed", "Saxophone")
+        add_teacher("Ms. Chord", "Vocals")
+        
+        # Pre-register some students
+        front_desk_register("Alice", "Piano")
+        front_desk_register("Bob", "Guitar")
+        front_desk_register("Charlie", "Violin")
+        front_desk_register("Diana", "Saxophone")
+        front_desk_register("Ethan", "Vocals")
+        front_desk_register("Fiona", "Bass")
 
         while True:
             print("\n===== Music School Front Desk =====")
