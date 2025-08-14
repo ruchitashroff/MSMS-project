@@ -37,15 +37,28 @@ It further enhances the code structure by integrating all data into one global d
 ---
 
 ### How PST2 Works
-flowchart TD
-A[Start Program] --> B[load_data()]
-    B --> C[Display Main Menu]
-    C --> D[User Selects Option]
-    D -->|CRUD or Check-in| E[Update app_data]
-    E --> F[save_data()]
-    F --> C
-    D -->|Exit| G[Save & Quit]
+**Load Data** (`load_data()`)  
+   - The program looks for `msms.json`.  
+   - If it exists → all students, teachers, courses, and attendance records are loaded into the **`app_data`** dictionary.  
+   - If it doesn’t exist → an empty structure is created to start fresh.  
 
+2. **Show Main Menu**  
+   - The user is shown a menu with options (e.g., add student, enrol in course, record attendance, print student card, exit).  
+
+3. **User Chooses an Option**  
+   - The program reads the choice and calls the appropriate function.  
+   - **CRUD** (Create, Read, Update, Delete) or attendance actions update the `app_data` dictionary in memory.  
+
+4. **Save Immediately** (`save_data()`)  
+   - After every change, the updated `app_data` is saved back to `msms.json` in human-readable JSON format.  
+   - This ensures **no changes are lost** even if the program crashes.  
+
+5. **Loop Back to Menu**  
+   - The menu is displayed again so the user can perform more actions.  
+
+6. **Exit Program**  
+   - When the user selects “Exit,” `save_data()` is called one last time to confirm all data is stored.  
+   - The program then closes.  
 ---
 
 ### RUNNING PST2
