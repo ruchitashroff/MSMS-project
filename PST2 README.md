@@ -16,7 +16,7 @@ It further enhances the code structure by integrating all data into one global d
 
 ---
 
-### KEY FEATURES OF EACH FRAGMENT
+## KEY FEATURES OF EACH FRAGMENT
 1. **The Core Persistence Engine**
 - 'load_data(path)': Loads 'app_data' from 'msms.json' at startup - if there is no file, an empty structure is created.
 - 'save_data(path): Saves 'app_data' back to 'msms.json' in a clean, readable JSON format. 
@@ -36,7 +36,7 @@ It further enhances the code structure by integrating all data into one global d
 
 ---
 
-### How PST2 Works
+## How PST2 Works
 **Load Data** (`load_data()`)  
    - The program looks for `msms.json`.  
    - If it exists → all students, teachers, courses, and attendance records are loaded into the **`app_data`** dictionary.  
@@ -61,19 +61,19 @@ It further enhances the code structure by integrating all data into one global d
    - The program then closes.  
 ---
 
-### RUNNING PST2
+## RUNNING PST2
 
-## Requirements 
+### Requirements 
 - Python 3.8+
 'pst2_main.py' and supporting modules in the same directory
 
 ## Steps
-## Open terminal in the MSMS-project directory
+### Open terminal in the MSMS-project directory
 python pst2_main.py
 
 ---
 
-### TESTING PST2
+## TESTING PST2
 1. **Start Fresh**
 - Delete or rename msms.json before running the program to begin with no stored data. 
 
@@ -93,13 +93,13 @@ python pst2_main.py
 
 ---
 
-### DESIGN CHOICES - Why we did it this way.
+## DESIGN CHOICES - Why we did it this way.
 - **Changes are saved immediately** - Prevents accidental data loss. 
 - **Global Data Dictionary (app_data)**: Centralizes all data in one place so it can be managed efficiently.
 - **Format that is Human-Readable**: Makes debugging and editing easy
 - **Menu Based Command-Line Interface**: Maintains a simple and suitable interface for learning.
 
-### ASSUMPTIONS - What we expect from the user.
+## ASSUMPTIONS - What we expect from the user.
 - Every student, teacher and course must have a unique ID to prevent confusion and ensures they are all linked correctly.
 - User only enters valid data formats
 - Badges are generated as plain text files 
@@ -108,7 +108,7 @@ python pst2_main.py
 
 ---
 
-### File Structure (PST2):
+## File Structure (PST2):
 MSMS-project/
 - pst2_main.py        (PST2 entry point)
 -  msms.json           (Persistent storage file)
