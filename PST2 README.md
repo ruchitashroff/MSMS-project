@@ -97,13 +97,13 @@ python pst2_main.py
 
 ### File Structure (PST2):
 MSMS-project/
-- pst2_main.py        # PST2 entry point
--  msms.json           # Persistent storage file (auto-generated)
-- student.py          # Student-related functions
-- teacher.py          # Teacher-related functions
-- course.py           # Course-related functions
-- attendance.py       # Attendance tracking functions
-- README.md           # Project documentation
+- pst2_main.py        (PST2 entry point)
+-  msms.json           (Persistent storage file)
+- student.py          (Student-related functions)
+- teacher.py          (Teacher-related functions)
+- course.py           (Course-related functions)
+- attendance.py       (Attendance tracking functions)
+- README.md           (Project documentation)
 
 
 
