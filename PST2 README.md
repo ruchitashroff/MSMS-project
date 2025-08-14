@@ -48,14 +48,14 @@ A[Start Program] --> B[load_data()]
 
 ---
 
-# RUNNING PST2
+### RUNNING PST2
 
 ## Requirements 
 - Python 3.8+
 'pst2_main.py' and supporting modules in the same directory
 
 ## Steps
-# Open terminal in the MSMS-project directory
+## Open terminal in the MSMS-project directory
 python pst2_main.py
 
 ---
