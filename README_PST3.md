@@ -13,26 +13,6 @@ Unlike PST1 and PST2, which were procedural and messy, **PST3 introduces a clean
 
 Data is stored persistently in `data/msms.json`.
 
---- 
-
-## 📂 Project Structure
-MSMS_PST3/
-│
-├── app/ # Application logic (Models + Controller)
-│ ├── user.py # Base User class
-│ ├── student.py # StudentUser class
-│ ├── teacher.py # TeacherUser and Course classes
-│ └── schedule.py # ScheduleManager (main controller)
-│
-├── data/
-│ └── msms.json # Persistent data storage (students, teachers, courses, attendance)
-│
-├── main.py # Entry point (View Layer)
-├── README.md # Documentation
-
-yaml
-Copy code
-
 ---
 
 ## How to Run
