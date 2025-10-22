@@ -36,25 +36,6 @@ This project demonstrates progressive software engineering practices, from simpl
 
 ---
 
-## Directory Structure
-
-msms-project/
-│
-├─ app/
-│ ├─ schedule.py # Core logic: student/lesson management, finance
-│ ├─ admin_utils.py # Logging & backup utilities
-│
-├─ gui/
-│ ├─ main_dashboard.py # Main Streamlit dashboard
-│ ├─ finance_pages.py # GUI pages for finance/payment features
-│
-├─ tests/
-│ ├─ test_schedule_manager.py # Automated unit tests using pytest
-│
-├─ main.py # Entry point: launches GUI, logging, backups
-└─ README.md
----
-
 ## Project Stages (PST1–PST5)
 
 ### **PST1: The Foundation**
